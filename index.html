@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya Decoration – Nepali Cultural Event Decorators</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cur"></div>
+  <div id="curR"></div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="nav">
+    <a class="nlogo" href="#" onclick="showPage('home'); return false;">
+      <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="20" stroke="#C9952A" stroke-width="1.1"/>
+        <circle cx="22" cy="22" r="16.5" stroke="#C9952A" stroke-width="0.5" stroke-dasharray="2 2.8"/>
+        <ellipse cx="22" cy="22" rx="4" ry="10.5" stroke="#C9952A" stroke-width="0.7" opacity=".8"/>
+        <ellipse cx="22" cy="22" rx="4" ry="10.5" stroke="#C9952A" stroke-width="0.7" opacity=".8" transform="rotate(45 22 22)"/>
+        <ellipse cx="22" cy="22" rx="4" ry="10.5" stroke="#C9952A" stroke-width="0.7" opacity=".8" transform="rotate(90 22 22)"/>
+        <ellipse cx="22" cy="22" rx="4" ry="10.5" stroke="#C9952A" stroke-width="0.7" opacity=".8" transform="rotate(135 22 22)"/>
+        <path d="M22 15.5L27 22L22 28.5L17 22Z" stroke="#C9952A" stroke-width="0.9" fill="rgba(201,149,42,0.1)"/>
+        <circle cx="22" cy="22" r="2.4" fill="#C9952A"/>
+        <circle cx="22" cy="5"  r="1.1" fill="#C9952A" opacity=".65"/>
+        <circle cx="39" cy="22" r="1.1" fill="#C9952A" opacity=".65"/>
+        <circle cx="22" cy="39" r="1.1" fill="#C9952A" opacity=".65"/>
+        <circle cx="5"  cy="22" r="1.1" fill="#C9952A" opacity=".65"/>
+      </svg>
+      <div class="nlogo-t">
+        <strong>Maya Decoration</strong>
+        <span>Nepali Cultural Decorators</span>
+      </div>
+    </a>
+    <ul class="nlinks">
+      <li><button id="nb-home"    class="active" onclick="showPage('home')">Home</button></li>
+      <li><button id="nb-pricing"            onclick="showPage('pricing')">Pricing</button></li>
+      <li><button id="nb-contact"            onclick="showPage('contact')">Contact</button></li>
+      <li><a href="#" onclick="goGallery(); return false;">Gallery</a></li>
+    </ul>
+    <a class="ncta" href="#" onclick="showPage('contact'); return false;">Book Now</a>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob" id="mob">
+    <button onclick="showPage('home');   closeMob()">Home</button>
+    <button onclick="showPage('pricing');closeMob()">Pricing</button>
+    <button onclick="showPage('contact');closeMob()">Contact</button>
+    <button onclick="goGallery();        closeMob()">Gallery</button>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE 1 — HOME
+  ═══════════════════════════════════════ -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hbg"></div>
+      <div class="hpat"></div>
+      <div class="hcon">
+        <p class="hey">Est. with love &amp; tradition</p>
+        <h1 class="htit">Maya<br><em>Decoration</em></h1>
+        <p class="hsub">Where Nepali tradition meets timeless elegance</p>
+        <div class="hdiv"></div>
+        <div class="hbts">
+          <a class="btn-g" href="#" onclick="goGallery(); return false;"><span>View Our Work</span></a>
+          <a class="btn-o" href="#" onclick="showPage('contact'); return false;">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="hscr"><span>Scroll</span><div class="scrl"></div></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <div class="wrap">
+        <div class="about-wrap">
+          <!-- Image column -->
+          <div class="about-img-col rv">
+            <div class="about-img-frame">
+              <img src="ivory-gold-stage.jpg" alt="Grand wedding stage decoration by Maya Decoration">
+            </div>
+            <div class="about-badge">
+              <strong>10+</strong>
+              <span>Years of Craft &amp; Tradition</span>
+            </div>
+          </div>
+          <!-- Text column -->
+          <div class="about-txt-col">
+            <div class="rv">
+              <span class="label">Our Story</span>
+              <h2 class="h2">Rooted in Culture,<br><em>Crafted with Love</em></h2>
+            </div>
+            <p class="rv d1">Maya Decoration was born from a deep reverence for Nepali culture. We transform spaces into living tapestries of tradition — where every marigold garland, every draped cloth, every flickering diya tells a story.</p>
+            <p class="rv d2">From the joyous grandeur of a wedding mandap to the tender intimacy of a rice-feeding ceremony, we bring the same devotion to every event. Our artisans draw from generations of cultural knowledge, weaving authenticity into every detail.</p>
+            <div class="vals rv d3">
+              <div class="val"><div class="val-ic">🪔</div><div class="val-t">Authentic</div><div class="val-d">True to Nepali tradition</div></div>
+              <div class="val"><div class="val-ic">🌸</div><div class="val-t">Bespoke</div><div class="val-d">Every event is uniquely yours</div></div>
+              <div class="val"><div class="val-ic">✨</div><div class="val-t">Devoted</div><div class="val-d">Perfection in every petal</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="sec">
+      <div class="wrap">
+        <div class="svc-top">
+          <div>
+            <span class="label" style="color:var(--gold)">What We Do</span>
+            <h2 class="h2 rv">We Decorate<br><em>Life's Sacred</em><br>Moments</h2>
+          </div>
+          <div class="rv d1" style="padding-top:12px">
+            <p class="body-txt">Each ceremony in Nepali culture is a universe unto itself — with its own colours, symbols, and significance. We understand these nuances and honour them in every arrangement we create.</p>
+          </div>
+        </div>
+        <div class="svc-grid">
+          <div class="svc rv"><div class="svc-n">01</div><div class="svc-ico">💍</div><h3 class="svc-name">Wedding Decoration</h3><p class="svc-desc">Breathtaking mandaps adorned with fresh flowers, golden drapes, and traditional motifs. The perfect backdrop for your lifelong union.</p><div class="svc-line"></div></div>
+          <div class="svc rv d1"><div class="svc-n">02</div><div class="svc-ico">🎊</div><h3 class="svc-name">Bartamanda</h3><p class="svc-desc">Sacred thread ceremony decorations honouring this rite of passage with dignity, beauty and deep cultural significance.</p><div class="svc-line"></div></div>
+          <div class="svc rv d2"><div class="svc-n">03</div><div class="svc-ico">🍚</div><h3 class="svc-name">Rice Feeding / Pasni</h3><p class="svc-desc">Tender arrangements filled with warmth and colour to celebrate a child's precious first milestone in style.</p><div class="svc-line"></div></div>
+          <div class="svc rv d3"><div class="svc-n">04</div><div class="svc-ico">🏮</div><h3 class="svc-name">Cultural Events</h3><p class="svc-desc">Dashain, Tihar, Teej and all Nepali festivals brought to life with authentic decorations that capture the joy of tradition.</p><div class="svc-line"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="sec" style="background:var(--cw)">
+      <div class="wrap">
+        <div class="gal-head">
+          <span class="label rv">Our Portfolio</span>
+          <h2 class="h2 rv d1">A Glimpse of<br><em>Our Artistry</em></h2>
+          <p class="body-txt rv d2">Every photograph captures a moment we helped make unforgettable.</p>
+        </div>
+        <div class="gfilter rv">
+          <button class="fb act" data-f="all">All Events</button>
+          <button class="fb" data-f="wedding">Weddings</button>
+          <button class="fb" data-f="bartamanda">Bartamanda</button>
+          <button class="fb" data-f="pasni">Pasni</button>
+          <button class="fb" data-f="cultural">Cultural</button>
+        </div>
+        <div class="ggrid">
+          <div class="grow">
+            <div class="gi landscape-full" data-cat="wedding" data-title="Grand Wedding Stage" data-label="Wedding">
+            <img src="grand-wedding-stage.jpg" alt="Grand Wedding Stage" loading="lazy">
+            <div class="go"><div class="got">Grand Wedding Stage</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+          <div class="grow grow-2">
+            <div class="gi portrait-half" data-cat="wedding" data-title="Birdcage Centrepiece" data-label="Wedding">
+            <img src="birdcage-centrepiece.jpg" alt="Birdcage Centrepiece" loading="lazy">
+            <div class="go"><div class="got">Birdcage Centrepiece</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+            <div class="gi portrait-half" data-cat="wedding" data-title="Pink Rose Birdcage" data-label="Wedding">
+            <img src="pink-rose-birdcage.jpg" alt="Pink Rose Birdcage" loading="lazy">
+            <div class="go"><div class="got">Pink Rose Birdcage</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+          <div class="grow">
+            <div class="gi landscape-full" data-cat="bartamanda" data-title="Red & White Mandap" data-label="Bartamanda">
+            <img src="red-white-mandap.jpg" alt="Red & White Mandap" loading="lazy">
+            <div class="go"><div class="got">Red & White Mandap</div><div class="goc">Bartamanda</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+          <div class="grow grow-2">
+            <div class="gi portrait-half" data-cat="wedding" data-title="Colourful Floral Cage" data-label="Wedding">
+            <img src="colourful-floral-cage.jpg" alt="Colourful Floral Cage" loading="lazy">
+            <div class="go"><div class="got">Colourful Floral Cage</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+            <div class="gi portrait-half" data-cat="cultural" data-title="Blossom Tree & Orbs" data-label="Cultural">
+            <img src="blossom-tree-orbs.jpg" alt="Blossom Tree & Orbs" loading="lazy">
+            <div class="go"><div class="got">Blossom Tree & Orbs</div><div class="goc">Cultural</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+          <div class="grow grow-2">
+            <div class="gi portrait-half" data-cat="pasni" data-title="Welcome Chalkboard" data-label="Pasni">
+            <img src="welcome-chalkboard.jpg" alt="Welcome Chalkboard" loading="lazy">
+            <div class="go"><div class="got">Welcome Chalkboard</div><div class="goc">Pasni</div></div>
+            <div class="ge">✦</div>
+          </div>
+            <div class="gi landscape-half" data-cat="wedding" data-title="Ivory Gold Stage Setup" data-label="Wedding">
+            <img src="ivory-gold-stage.jpg" alt="Ivory Gold Stage Setup" loading="lazy">
+            <div class="go"><div class="got">Ivory Gold Stage Setup</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+          <div class="grow">
+            <div class="gi landscape-full" data-cat="wedding" data-title="Full Hall Transformation" data-label="Wedding">
+            <img src="full-hall-transformation.jpg" alt="Full Hall Transformation" loading="lazy">
+            <div class="go"><div class="got">Full Hall Transformation</div><div class="goc">Wedding</div></div>
+            <div class="ge">✦</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARALLAX BANNER -->
+    <div class="pbanner" id="pb">
+      <div class="pbg" id="pbg"></div>
+      <div class="ppat"></div>
+      <div class="pcon">
+        <blockquote>"Every celebration is a sacred thread — let us <em>weave it</em> with beauty, intention, and the warmth of Nepali culture."</blockquote>
+        <cite>— Maya Decoration</cite>
+      </div>
+    </div>
+
+    <!-- PROCESS -->
+    <section id="process" class="sec">
+      <div class="wrap">
+        <div class="orn rv">Our Process</div>
+        <div class="rv" style="text-align:center;font-size:1.5rem;color:var(--gold);margin:12px 0;opacity:.65">✦</div>
+        <h2 class="h2 rv" style="text-align:center">From Vision<br><em>to Reality</em></h2>
+        <p class="body-txt rv d1" style="margin:12px auto 0;text-align:center">We walk with you through every step, ensuring your vision becomes a flawless reality.</p>
+        <div class="psteps">
+          <div class="pstep rv"><div class="pcirc">01</div><h3 class="ptit">Consultation</h3><p class="pdesc">We sit with you, listen to your vision, and learn what makes your family's story unique.</p></div>
+          <div class="pstep rv d1"><div class="pcirc">02</div><h3 class="ptit">Design &amp; Proposal</h3><p class="pdesc">Bespoke plans — mood boards, colour palettes, floral choices — tailored to your ceremony.</p></div>
+          <div class="pstep rv d2"><div class="pcirc">03</div><h3 class="ptit">Preparation</h3><p class="pdesc">We source finest materials — fresh flowers, traditional fabrics — prepared with meticulous care.</p></div>
+          <div class="pstep rv d3"><div class="pcirc">04</div><h3 class="ptit">Transformation</h3><p class="pdesc">On the day, our team arrives early to transform your venue into breathtaking beauty.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="sec">
+      <div class="wrap">
+        <span class="label rv" style="text-align:center;display:block">What Families Say</span>
+        <h2 class="h2 rv d1" style="text-align:center;color:var(--gl)">Stories of<br><em style="color:var(--cream)">Joy &amp; Gratitude</em></h2>
+        <div class="tgrid">
+          <div class="tc rv"><div class="tst">★★★★★</div><div class="qm">"</div><p class="tt">Maya Decoration turned our wedding into a dream we never wanted to wake from. Every corner was a masterpiece — the mandap, the florals, the lighting. Our guests are still talking about it.</p><div class="ta"><div class="tav">SR</div><div class="tai"><strong>Sunita &amp; Rohan Sharma</strong><span>Wedding, London</span></div></div></div>
+          <div class="tc rv d1"><div class="tst">★★★★★</div><div class="qm">"</div><p class="tt">The Bartamanda decorations were absolutely stunning. They understood the cultural significance and created something both traditional and breathtakingly beautiful.</p><div class="ta"><div class="tav">PG</div><div class="tai"><strong>Prabha Gurung</strong><span>Bartamanda, Birmingham</span></div></div></div>
+          <div class="tc rv d2"><div class="tst">★★★★★</div><div class="qm">"</div><p class="tt">Our daughter's Pasni was more beautiful than we imagined. Every detail — Maya Decoration made our little girl's first milestone truly magical.</p><div class="ta"><div class="tav">BT</div><div class="tai"><strong>Binita &amp; Tej Thapa</strong><span>Rice Feeding Ceremony</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="fgrid">
+        <div class="fbr"><h2><span>Nepali Cultural Decorators</span>Maya Decoration</h2><p>Crafting sacred spaces with the colours, textures, and traditions of Nepal. Every event is a story — we make it beautiful.</p></div>
+        <div class="fcol"><h4>Services</h4><ul><li><a href="#">Wedding Decoration</a></li><li><a href="#">Bartamanda</a></li><li><a href="#">Rice Feeding / Pasni</a></li><li><a href="#">Cultural Events</a></li></ul></div>
+        <div class="fcol"><h4>Navigate</h4><ul><li><button onclick="showPage('home')">Home</button></li><li><button onclick="showPage('pricing')">Pricing</button></li><li><button onclick="showPage('contact')">Contact</button></li></ul></div>
+      </div>
+      <div class="fbot"><span>© 2025 Maya Decoration. All rights reserved.</span><span style="color:var(--gold)">✦ ✦ ✦</span><span>Made with love &amp; tradition</span></div>
+    </footer>
+  </div><!-- /page-home -->
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE 2 — PRICING
+  ═══════════════════════════════════════ -->
+  <div class="page" id="page-pricing">
+
+    <div class="pg-hero">
+      <div class="pg-hero-inner">
+        <span class="label" style="display:block;text-align:center;color:var(--gl)">Transparent &amp; Fair</span>
+        <h1 class="h2" style="color:var(--gl);margin-bottom:14px">Our <em style="color:#fff">Pricing</em></h1>
+        <p class="body-txt" style="color:rgba(250,243,224,.62);margin:0 auto;text-align:center">Every celebration deserves extraordinary decoration. We offer flexible packages tailored to your event, budget and vision.</p>
+      </div>
+    </div>
+
+    <div class="pnote">
+      <div class="wrap">
+        <div class="pnote-inner">
+          <span>ℹ️</span>
+          <p>All prices are <strong>guide prices</strong> and may vary based on venue size, guest count, travel and specific requirements. A bespoke quote is provided after your free consultation. <strong>All packages include setup and takedown.</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pkg-sec">
+      <div class="wrap">
+        <div class="pkg-intro rv">
+          <span class="label" style="display:block;text-align:center">Choose Your Package</span>
+          <h2 class="h2" style="text-align:center">Packages to Suit<br><em>Every Celebration</em></h2>
+        </div>
+        <div class="pkg-grid">
+          <div class="pkg rv">
+            <div class="pkg-head"><div class="pkg-ico">🌸</div><div class="pkg-name">Essentials</div><div class="pkg-tag">Beautiful decoration for intimate celebrations with all the essentials covered.</div></div>
+            <div class="pkg-pbox"><div class="pkg-price"><sup>£</sup>1,200</div><div class="pkg-pnote">Starting from · up to 80 guests</div></div>
+            <div class="pkg-list"><ul><li>Stage backdrop with draping</li><li>Floral arch centrepiece</li><li>Up to 10 table centrepieces</li><li>Table covers &amp; chair sashes</li><li>Welcome chalkboard with florals</li><li>Up lighting (4 units)</li><li>Setup &amp; takedown included</li></ul></div>
+            <div class="pkg-cta"><a class="pkg-btn" href="#" onclick="showPage('contact'); return false;"><span>Enquire Now</span></a></div>
+          </div>
+          <div class="pkg featured rv d1">
+            <div class="pkg-badge">Most Popular</div>
+            <div class="pkg-head"><div class="pkg-ico">👑</div><div class="pkg-name">Signature</div><div class="pkg-tag">Our most loved package — a full transformation guests will remember forever.</div></div>
+            <div class="pkg-pbox"><div class="pkg-price"><sup>£</sup>3,200</div><div class="pkg-pnote">Starting from · up to 200 guests</div></div>
+            <div class="pkg-list"><ul><li>Grand stage with gold &amp; white draping</li><li>Ornate floral arch + flower wall panels</li><li>Up to 30 table centrepieces</li><li>Birdcage centrepieces with florals</li><li>Red carpet walkway (10m)</li><li>Entrance with Roman pillars</li><li>Photo booth with mirror</li><li>Welcome chalkboard + easel</li><li>Cherry blossom trees (x2)</li><li>Up lighting (12 units)</li><li>Table covers &amp; chair covers</li></ul></div>
+            <div class="pkg-cta"><a class="pkg-btn" href="#" onclick="showPage('contact'); return false;"><span>Enquire Now</span></a></div>
+          </div>
+          <div class="pkg rv d2">
+            <div class="pkg-head"><div class="pkg-ico">✨</div><div class="pkg-name">Grand</div><div class="pkg-tag">An extraordinary full-venue transformation for the most special occasions.</div></div>
+            <div class="pkg-pbox"><div class="pkg-price"><sup>£</sup>5,960</div><div class="pkg-pnote">Starting from · up to 350 guests</div></div>
+            <div class="pkg-list"><ul><li>Platform stage 7×4m (1ft raised)</li><li>Vinyl stage flooring</li><li>Dance floor with vinyl + decal</li><li>Walk way vinyl decoration (10m)</li><li>Mirror vinyl walkway "I Do" (10m)</li><li>Entrance with Roman pillars</li><li>Photo booth with mirror</li><li>30 floral centrepieces</li><li>35 table covers</li><li>8/4 photo print welcome display</li><li>Up lighting package</li><li>Full floral arch + flower walls</li></ul></div>
+            <div class="pkg-cta"><a class="pkg-btn" href="#" onclick="showPage('contact'); return false;"><span>Enquire Now</span></a></div>
+          </div>
+        </div>
+
+        <div class="rv">
+          <span class="label" style="display:block">Add-Ons &amp; Extras</span>
+          <h2 class="h2">Enhance Your<br><em>Package</em></h2>
+        </div>
+        <div class="extras-grid">
+          <div class="xcard rv"><div class="xcard-ico">🪞</div><div><div class="xcard-name">Mirror Photo Booth</div><div class="xcard-desc">Interactive selfie mirror with props and digital prints</div><div class="xcard-price">From £350</div></div></div>
+          <div class="xcard rv d1"><div class="xcard-ico">🌸</div><div><div class="xcard-name">Extra Centrepieces</div><div class="xcard-desc">Additional birdcage or floral centrepieces per table</div><div class="xcard-price">£15 per table</div></div></div>
+          <div class="xcard rv d2"><div class="xcard-ico">🏛️</div><div><div class="xcard-name">Roman Pillars</div><div class="xcard-desc">Grand entrance pillars with floral arrangements</div><div class="xcard-price">From £250</div></div></div>
+          <div class="xcard rv"><div class="xcard-ico">🕯️</div><div><div class="xcard-name">Up Lighting</div><div class="xcard-desc">Colour-matched LED uplighting around the venue</div><div class="xcard-price">From £200</div></div></div>
+          <div class="xcard rv d1"><div class="xcard-ico">🌳</div><div><div class="xcard-name">Blossom Trees</div><div class="xcard-desc">Cherry blossom or white blossom statement trees</div><div class="xcard-price">£120 each</div></div></div>
+          <div class="xcard rv d2"><div class="xcard-ico">📸</div><div><div class="xcard-name">Welcome Display</div><div class="xcard-desc">Custom photo print welcome board (8×4 or 4×4)</div><div class="xcard-price">From £100</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-sec">
+      <div class="wrap">
+        <span class="label rv">Full Breakdown</span>
+        <h2 class="h2 rv d1">Grand Package<br><em>Itemised Quote</em></h2>
+        <p class="body-txt rv d2" style="margin-top:12px">A sample itemised breakdown of our Grand package — exactly as provided to clients.</p>
+        <div class="tbl-wrap rv d2">
+          <table class="itbl">
+            <thead><tr><th>Description</th><th class="r">QTY</th><th class="r">Unit Price</th><th class="r">Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Platform 7×4 meter 1ft height</td><td class="r">1</td><td class="r">£ 500.00</td><td class="r">£ 500.00</td></tr>
+              <tr><td>Vinyl For Stage</td><td class="r">1</td><td class="r">£ 500.00</td><td class="r">£ 500.00</td></tr>
+              <tr><td>Stage</td><td class="r">1</td><td class="r">£ 950.00</td><td class="r">£ 950.00</td></tr>
+              <tr><td>Dance floor with vinyl (With Decal extra £100) 18×16ft</td><td class="r">1</td><td class="r">£ 950.00</td><td class="r">£ 950.00</td></tr>
+              <tr><td>Walk way vinyl with decoration 10 meter</td><td class="r">1</td><td class="r">£ 650.00</td><td class="r">£ 650.00</td></tr>
+              <tr><td>Entrance with Roman pillars</td><td class="r">1</td><td class="r">£ 250.00</td><td class="r">£ 250.00</td></tr>
+              <tr><td>Photo booth with mirror</td><td class="r">1</td><td class="r">£ 350.00</td><td class="r">£ 350.00</td></tr>
+              <tr><td>Centrepiece</td><td class="r">30</td><td class="r">£ 15.00</td><td class="r">£ 450.00</td></tr>
+              <tr><td>Table Cover</td><td class="r">35</td><td class="r">£ 6.00</td><td class="r">£ 210.00</td></tr>
+              <tr><td>Mirror vinyl Walk way Outside "I Do" 10 meter</td><td class="r">1</td><td class="r">£ 850.00</td><td class="r">£ 850.00</td></tr>
+              <tr><td>8/4 photo print for welcome</td><td class="r">1</td><td class="r">£ 100.00</td><td class="r">£ 100.00</td></tr>
+              <tr><td>Up light</td><td class="r">1</td><td class="r">£ 200.00</td><td class="r">£ 200.00</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="3" style="text-align:right;letter-spacing:.18em">TOTAL</td><td class="r">£ 5,960.00</td></tr></tfoot>
+          </table>
+          <p class="tbl-note">* Prices are guide rates. Final quote provided after consultation. VAT not included.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="fgrid">
+        <div class="fbr"><h2><span>Nepali Cultural Decorators</span>Maya Decoration</h2><p>Crafting sacred spaces with the colours, textures, and traditions of Nepal.</p></div>
+        <div class="fcol"><h4>Pages</h4><ul><li><button onclick="showPage('home')">Home</button></li><li><button onclick="showPage('pricing')">Pricing</button></li><li><button onclick="showPage('contact')">Contact</button></li></ul></div>
+        <div class="fcol"><h4>Services</h4><ul><li><a href="#">Wedding</a></li><li><a href="#">Bartamanda</a></li><li><a href="#">Pasni</a></li><li><a href="#">Cultural Events</a></li></ul></div>
+      </div>
+      <div class="fbot"><span>© 2025 Maya Decoration. All rights reserved.</span><span style="color:var(--gold)">✦ ✦ ✦</span><span>Made with love &amp; tradition</span></div>
+    </footer>
+  </div><!-- /page-pricing -->
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE 3 — CONTACT
+  ═══════════════════════════════════════ -->
+  <div class="page" id="page-contact">
+
+    <div class="pg-hero">
+      <div class="pg-hero-inner">
+        <span class="label" style="display:block;text-align:center;color:var(--gl)">Get in Touch</span>
+        <h1 class="h2" style="color:var(--gl);margin-bottom:14px">Let's Create<br><em style="color:#fff">Something Beautiful</em></h1>
+        <p class="body-txt" style="color:rgba(250,243,224,.62);margin:0 auto;text-align:center">We'd love to hear about your upcoming celebration. Reach out and let's begin crafting your perfect event together.</p>
+      </div>
+    </div>
+
+    <section class="sec" style="background:var(--cw)">
+      <div class="wrap">
+        <div class="cgrid">
+          <div class="cinfo">
+            <div>
+              <span class="label rv">Our Details</span>
+              <h2 class="h2 rv d1" style="font-size:2.1rem">We're Here<br><em>for You</em></h2>
+            </div>
+            <div class="cdet rv"><div class="cico">📞</div><div class="cdtxt"><strong>Call or WhatsApp</strong><span>+44 7000 000 000</span></div></div>
+            <div class="cdet rv d1"><div class="cico">✉️</div><div class="cdtxt"><strong>Email Us</strong><span>hello@mayadecoration.co.uk</span></div></div>
+            <div class="cdet rv d2"><div class="cico">📍</div><div class="cdtxt"><strong>Based in</strong><span>London, UK<br>Available across the UK &amp; Europe</span></div></div>
+            <div class="cdet rv d3"><div class="cico">🕐</div><div class="cdtxt"><strong>Response Time</strong><span>We reply within 24 hours<br>Mon–Sun: 9am – 8pm</span></div></div>
+            <div class="rv d4">
+              <p style="font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gd);margin-bottom:9px">Follow Our Work</p>
+              <div class="csoc">
+                <a class="sb" href="#">📷</a>
+                <a class="sb" href="#">📘</a>
+                <a class="sb" href="#">🎵</a>
+                <a class="sb" href="#">💬</a>
+              </div>
+            </div>
+          </div>
+          <div class="rv d1">
+            <form class="cform" id="cform" onsubmit="doSub(event)">
+              <div class="fr">
+                <div class="fg"><label>First Name</label><input type="text" placeholder="Sita" required></div>
+                <div class="fg"><label>Last Name</label><input type="text" placeholder="Sharma" required></div>
+              </div>
+              <div class="fr">
+                <div class="fg"><label>Email</label><input type="email" placeholder="sita@email.com" required></div>
+                <div class="fg"><label>Phone</label><input type="tel" placeholder="+44 7000 000000"></div>
+              </div>
+              <div class="fg"><label>Type of Event</label>
+                <select required>
+                  <option value="" disabled selected>Select your celebration</option>
+                  <option>Wedding / Vivah</option>
+                  <option>Bartamanda / Thread Ceremony</option>
+                  <option>Rice Feeding / Pasni</option>
+                  <option>Cultural Event / Festival</option>
+                  <option>Other Celebration</option>
+                </select>
+              </div>
+              <div class="fr">
+                <div class="fg"><label>Event Date</label><input type="date"></div>
+                <div class="fg"><label>Number of Guests</label>
+                  <select>
+                    <option value="">Approximate count</option>
+                    <option>Under 50</option><option>50–150</option>
+                    <option>150–300</option><option>300+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fg"><label>Interested Package</label>
+                <select>
+                  <option value="">Select a package (optional)</option>
+                  <option>Essentials – From £1,200</option>
+                  <option>Signature – From £3,200</option>
+                  <option>Grand – From £5,960</option>
+                  <option>Custom / Bespoke</option>
+                </select>
+              </div>
+              <div class="fg"><label>Tell Us Your Vision</label>
+                <textarea placeholder="Share your ideas, cultural requirements, colour themes, or anything you'd like us to know..."></textarea>
+              </div>
+              <button type="submit" class="fsub"><span>Send Your Enquiry ✦</span></button>
+              <div class="fsuc" id="fsuc">✦ Namaste! We've received your enquiry and will be in touch within 24 hours. ✦</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="fgrid">
+        <div class="fbr"><h2><span>Nepali Cultural Decorators</span>Maya Decoration</h2><p>Crafting sacred spaces with the colours, textures, and traditions of Nepal.</p></div>
+        <div class="fcol"><h4>Pages</h4><ul><li><button onclick="showPage('home')">Home</button></li><li><button onclick="showPage('pricing')">Pricing</button></li><li><button onclick="showPage('contact')">Contact</button></li></ul></div>
+        <div class="fcol"><h4>Services</h4><ul><li><a href="#">Wedding</a></li><li><a href="#">Bartamanda</a></li><li><a href="#">Pasni</a></li><li><a href="#">Cultural Events</a></li></ul></div>
+      </div>
+      <div class="fbot"><span>© 2025 Maya Decoration. All rights reserved.</span><span style="color:var(--gold)">✦ ✦ ✦</span><span>Made with love &amp; tradition</span></div>
+    </footer>
+  </div><!-- /page-contact -->
+
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb">
+    <button class="lbcl" id="lbcl">✕</button>
+    <button class="lbn lbp"  id="lbp">&#8249;</button>
+    <button class="lbn lbnx" id="lbnx">&#8250;</button>
+    <div class="lbc">
+      <div class="lbd"><img id="lbimg" src="" alt=""></div>
+      <div class="lbi"><h3 id="lbtit"></h3><p id="lblab"></p></div>
+      <div class="lbdots" id="lbdots"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
